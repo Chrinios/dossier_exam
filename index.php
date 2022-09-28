@@ -26,20 +26,20 @@
                 </div>
             </div>
             <div class='boite-composant'>
-                <div class='boite'>
+                <form action="comparateur.php" class='boite'>
                     <button class='btn-compare'>Boitier</button>
-                </div>
+                </form>
                 <div class='composant'>
-                    <div class='CSP'>
+                    <form action="comparateur.php" class='CSP'>
                         <button class='btn-compare'>Carte Graphique</button>
                         <button class='btn-compare'>Stockage</button>
                         <button class='btn-compare'>Processeur</button>
-                    </div>
-                    <div class='MCA'>
+                    </form>
+                    <form action="comparateur.php" class='MCA'>
                         <button class='btn-compare'>Mémoire</button>
                         <button class='btn-compare'>Carte Mémoire</button>
                         <button class='btn-compare'>Alimentation</button>
-                    </div>
+                    </form>
                 </div>
             </div>
         </div>
