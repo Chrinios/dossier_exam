@@ -1,0 +1,87 @@
+body{
+    background-color: grey;
+}
+
+/*Begin Header*/
+    .login-register{
+        display: flex;
+        justify-content: end;
+    }
+/*Finish Header*/
+
+/*Begin index.php*/
+
+    /*Begin Logo + Description*/
+        .logo-descriptif{
+            display: flex;
+            justify-content: center;
+            margin-left: 10%;
+            margin-right: 20%;
+        }
+        .logo{
+            margin-bottom: 3%;
+        }
+        .descriptif{
+            display: flex;
+            text-align: center;
+            align-items: flex-end;
+            margin-bottom: 10%;
+            margin-left: 10%;
+        }
+    /*Finish Logo + Description*/
+
+    /*Begin Button*/
+        .boite-composant{
+            display: flex;
+            flex-direction: column;
+        }
+        .boite{
+            display: flex;
+            justify-content: center;
+        }
+        .btn-compare{
+            width: 250px;
+	        padding: 25px;
+            margin-left: 5%;
+            margin-right: 5%;
+        }
+
+        .composant{
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            margin-bottom: 10%;
+        }
+
+        .CSP, .MCA{
+            display: flex;
+            justify-content: center;
+            margin-top: 4%;
+        }
+
+    /*Finish Button*/
+/*Finish index.php*/
+
+/*Begin footer*/
+    .contact-plan-site{
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+
+    .contact-plan-site{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .contact{
+        margin-right: 10%;
+    }
+
+    .plan-site{
+        margin-left: 10%;
+    }
+/*Finish footer*/
