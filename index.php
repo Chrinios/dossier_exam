@@ -27,18 +27,50 @@
             </div>
             <div class='boite-composant'>
                 <form action="comparateur.php" class='boite'>
-                    <button class='btn-compare'>Boitier</button>
+                    <button class='btn-compare'><img src="assets/img/boitier.png" alt="">
+                        <p>
+                            Boitier
+                        </p>
+                    </button>
                 </form>
                 <div class='composant'>
                     <form action="comparateur.php" class='CSP'>
-                        <button class='btn-compare'>Carte Graphique</button>
-                        <button class='btn-compare'>Stockage</button>
-                        <button class='btn-compare'>Processeur</button>
+                        <button class='btn-compare'><img src="assets/img/cg.png" alt="">
+                            <p>
+                                Carte Graphique
+                            </p>
+                        </button>
+
+                        <button class='btn-compare'><img src="assets/img/stockage.png" alt="">
+                            <p>
+                                Stockage
+                            </p>
+                        </button>
+
+                        <button class='btn-compare'><img src="assets/img/processeur.png" alt="">
+                            <p>
+                                Processeur
+                            </p>
+                        </button>
                     </form>
                     <form action="comparateur.php" class='MCA'>
-                        <button class='btn-compare'>Mémoire</button>
-                        <button class='btn-compare'>Carte Mémoire</button>
-                        <button class='btn-compare'>Alimentation</button>
+                        <button class='btn-compare'><img src="assets/img/memoire_ram.png" alt="">
+                            <p>
+                                Mémoire
+                            </p>
+                        </button>
+
+                        <button class='btn-compare'><img src="assets/img/carte-mere.jpg" alt="">
+                            <p>
+                                Carte Mère
+                            </p>
+                        </button>
+
+                        <button class='btn-compare'><img src="assets/img/boite_alimentation.jpg" alt="">
+                            <p>
+                                Alimentation
+                            </p>
+                        </button>
                     </form>
                 </div>
             </div>

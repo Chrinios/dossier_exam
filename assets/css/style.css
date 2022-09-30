@@ -3,10 +3,10 @@ body{
 }
 
 /*Begin Header*/
-    .login-register{
+    /*.login-register{
         display: flex;
         justify-content: end;
-    }
+    }*/
 /*Finish Header*/
 
 /*Begin index.php*/
@@ -40,6 +40,8 @@ body{
             justify-content: center;
         }
         .btn-compare{
+            display: flex;
+            flex-direction: column;
             width: 250px;
 	        padding: 25px;
             margin-left: 5%;
@@ -57,6 +59,12 @@ body{
             display: flex;
             justify-content: center;
             margin-top: 4%;
+        }
+
+        img{
+            display: flex;
+            max-width: 50px;
+            max-height: 40px;
         }
 
     /*Finish Button*/
