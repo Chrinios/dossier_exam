@@ -63,8 +63,6 @@ body{
 
         img{
             display: flex;
-            max-width: 50px;
-            max-height: 40px;
         }
 
     /*Finish Button*/
