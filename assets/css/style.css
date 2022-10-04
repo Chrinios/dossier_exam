@@ -3,10 +3,12 @@ body{
 }
 
 /*Begin Header*/
-    /*.login-register{
+    .login-register{
         display: flex;
-        justify-content: end;
-    }*/
+        justify-content: flex-end;
+        margin-right: 10%;
+        margin-top: 2%;
+    }
 /*Finish Header*/
 
 /*Begin index.php*/
