@@ -1,0 +1,85 @@
+/*Formulaire*/
+
+    .formulaire{
+        display: flex;
+        margin-top: 5%;
+        margin-left: 20%;
+        margin-right: 20%;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    p{
+        display: flex;
+        justify-content: center;
+    }
+
+    .form{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    #npet{
+        display: flex;
+        justify-content: center;
+        margin-top: 3%;
+        margin-bottom: 6%;
+    }
+
+    .input{
+        width: 500px;
+        height: 25px;
+        margin: 2%;
+        text-align: center;
+    }
+
+    .title{
+        justify-content: center;
+        height: 25px;
+        margin: 2%;
+        margin-left: 30%;
+        margin-right: 30%;
+        text-align: center;
+    }
+
+    #nom_prenom{
+        display: flex;
+        flex-direction: column;
+        margin-right: 10%;
+    }
+    #email_num{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    textarea{
+        resize: vertical;
+        margin-left: 20%;
+        margin-right: 20%;
+    }
+
+    .submit{
+        display: flex;
+        justify-content: center;
+    }
+    .envoyer{
+        width: 150px;
+        height: 75px;
+        margin: 4%;
+    }
+
+/*Fin Formulaire*/
+
+
+.return {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: black;
+    text-align: center;
+}
+

@@ -1,0 +1,3 @@
+Pour le bon fonctionnement du site internet,
+merci de bien vouloir créer la database, grace a fichier sql "injection-dbb" situé
+dans le dossier assets/sql.

@@ -1,7 +1,11 @@
 <div class='contact-plan-site'>
     <div class='contact'>
         Contact Us<br>
-        <button>URL vers contact form</button><br>
+        <a href="../dossier_exam/contact_us.php">
+            <button>
+                URL vers contact form
+            </button>
+        </a><br>
         Notre location <br>
         . <br>
         . <br>

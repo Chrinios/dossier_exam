@@ -1,14 +1,37 @@
 body{
     background-color: grey;
+    z-index: 1;
+    top: 0%;
 }
 
 /*Begin Header*/
+
+    .header{
+        background-color: black;
+        color: aqua;
+        z-index: 2;
+        border-bottom-left-radius: 15px;
+        border-bottom-right-radius: 15px;
+    }
+
     .login-register{
         display: flex;
         justify-content: flex-end;
+        flex-direction: row;
         margin-right: 10%;
-        margin-top: 2%;
     }
+
+    /*sticky part, begin*/
+        /*This will be able to stick the part i want on the top of the page*/
+        .sticky{
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            width: 100%;
+        }      
+    /*sticky part, finish*/
+
 /*Finish Header*/
 
 /*Begin index.php*/

@@ -12,7 +12,9 @@
             include_once('assets/Fh/header.php');
         ?>
         <div>
-            <div>
+            <!--Partie recherche-->
+            <div class="">
+                
                 <div>
                     
                 </div>
@@ -20,6 +22,7 @@
 
                 </div>
             </div>
+            <!--Partie Produit-->
             <div>
 
             </div>

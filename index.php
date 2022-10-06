@@ -25,6 +25,7 @@
                     </p>
                 </div>
             </div>
+            <!--Quand on click sur chaque button, sa nous amene sur la liste des produits-->
             <div class='boite-composant'>
                 <form action="comparateur.php" class='boite'>
                     <button class='btn-compare'><img src="assets/img/boitier.png" alt="">
