@@ -13,7 +13,7 @@
         ?>
         <div>
             <!--Partie recherche-->
-            <div class="">
+            <div>
                 
                 <div>
                     

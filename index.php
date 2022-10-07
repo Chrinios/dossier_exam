@@ -11,7 +11,7 @@
         <?php
             include_once('assets/Fh/header.php');
         ?>
-        <div>
+        <div class="contenu">
             <div class='logo-descriptif'>
                 <div class='logo'>
                     <img src="assets/img/compare.jpg" alt="">

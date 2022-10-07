@@ -1,13 +1,20 @@
 body{
     background-color: grey;
 }
+a{
+    color: aqua;
+}
 
 /*Begin Header*/
     .login-register{
         display: flex;
+        color: aquamarine;
+        background-color: black;
+        padding: 16px;
+        border-bottom-left-radius: 15px;
+        border-bottom-right-radius: 15px;
         justify-content: flex-end;
-        margin-right: 10%;
-        margin-top: 2%;
+        align-items: center;
     }
 /*Finish Header*/
 
@@ -70,18 +77,12 @@ body{
 /*Begin footer*/
     .contact-plan-site{
         display: flex;
+        background-color: black;
+        color: aqua;
         justify-content: center;
         flex-direction: row;
-        margin-left: 10%;
-        margin-right: 10%;
-    }
-
-    .contact-plan-site{
-        display: flex;
-        justify-content: center;
         align-items: center;
     }
-
     .contact{
         margin-right: 10%;
     }

@@ -1,4 +1,3 @@
-
 <form action="" method="get">
     <input type="text" name="username" id="username" required>
     <input type="password" name="password" id="password" required>

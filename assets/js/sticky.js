@@ -12,9 +12,9 @@ var sticky = header.offsetTop;
 // Add or remove the sticky class to my navbar when he is or isn't in position
 function myFunction() {
   if (window.pageYOffset > sticky) {
-    header.classList.add("sticky");
+      header.classList.add("sticky");
   }
   else {
-    header.classList.remove("sticky");
+      header.classList.remove("sticky");
   }
 }
