@@ -1,3 +1,9 @@
+<?php
+    ini_set('display_errors', true);
+    require_once('assets/php/function.php');
+    $pdo = pdo_connect_account();
+?>
+
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -28,8 +34,8 @@
                             <input type="text" placeholder="Nom" class="input" name="nom">
                             <input type="text" placeholder="Prénom" class="input" name="prenom">
                         </div>
-                        <div id="email_num">
-                            <input type="text" placeholder="Email" class="input" name="email">
+                        <div id="prenom_num">
+                            <input type="text" placeholder="email" class="input" name="email">
                             <input type="number" placeholder="Numéro de télèphone" class="input" name="phone">
                         </div>
                     </div>
@@ -57,5 +63,17 @@
 </html>
 
 <?php
-
+    if(isset($_POST['envoyer'])){
+        $nom = $_POST['nom'];
+        $prenom = $_POST['prenom'];
+        $email = $_POST['email'];
+        $phone = $_POST['phone'];
+        $titre = $_POST['titre'];
+        $message = $_POST['message'];
+        die(
+            sendmessage(
+                $nom, $prenom, $email, $phone, $titre, $message
+            )
+        );
+    }
 ?>

@@ -32,6 +32,19 @@
             }
         }
 
+        //Pour créer un message
+        function sendmessage($nom, $prenom, $email, $phone, $titre, $message){
+            try{
+                $pdo = pdo_connect();
+                $sql = "INSERT INTO `message`(`id`,`nom`,`prenom`,`email`,`phone`,`titre`,`message`)
+                        VALUE (NULL, '$nom','$prenom','$email','$phone','$titre','$message');";
+                $pdo->exec($sql);
+            }
+            catch(PDOException $a){
+                echo $sql . $a->getMessage();
+            }
+        }
+
         //Pour créer un compte
         function create($username, $email, $password){
             try{
