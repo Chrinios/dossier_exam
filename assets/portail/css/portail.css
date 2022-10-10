@@ -30,12 +30,21 @@ button{
 }
 
 /*Button login*/
-.log_in{
+#log_in, #hide{
     margin-right: 100px;
 }
 
+.formulaire{
+    display: flex;
+    justify-content: center;
+}
+
+#form_log-in, #form_register{
+    display: none;
+}
+
 /*Emplacement pour les forms*/
-.appear{
+#appear{
     display: flex;
     height: 460px;
     justify-content: center;

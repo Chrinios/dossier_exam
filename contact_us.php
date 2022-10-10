@@ -25,16 +25,15 @@
                 <form action="" method="post" class="form">
                     <div id="npet">
                         <div id="nom_prenom">
-                            <input type="text" placeholder="Nom" class="input">
-                            <input type="text" placeholder="Nom" class="input">
-                            <input type="text" placeholder="Prénom" class="input">
+                            <input type="text" placeholder="Nom" class="input" name="nom">
+                            <input type="text" placeholder="Prénom" class="input" name="prenom">
                         </div>
                         <div id="email_num">
-                            <input type="text" placeholder="Email" class="input">
-                            <input type="number" placeholder="Numéro de télèphone" class="input">
+                            <input type="text" placeholder="Email" class="input" name="email">
+                            <input type="number" placeholder="Numéro de télèphone" class="input" name="phone">
                         </div>
                     </div>
-                    <input type="text" placeholder="Titre du message" class="title">
+                    <input type="text" placeholder="Titre du message" class="title" name="titre">
                     <textarea name="message" cols="30" rows="10">
                         Placer votre message ici.
                     </textarea>
@@ -56,3 +55,7 @@
         <script src="../dossier_exam/assets/js/sticky.js"></script>
     </body>
 </html>
+
+<?php
+
+?>
