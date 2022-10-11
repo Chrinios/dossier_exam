@@ -11,7 +11,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="../dossier_exam/assets/css/style.css">
-        <link rel="stylesheet" href="../dossier_exam/assets/portail/css/portail.css">
+        <link rel="stylesheet" href="../dossier_exam/assets/css/portail.css">
         <title>PCompare Portail</title>
     </head>
     <body>
@@ -70,6 +70,6 @@
                 );
             }
         ?>
-        <script src="assets/portail/switch.js"></script>
+        <script src="assets/js/switch.js"></script>
     </body>
 </html>

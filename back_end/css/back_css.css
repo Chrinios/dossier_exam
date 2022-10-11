@@ -1,4 +1,14 @@
 body{
     background-color: darkblue;
     color: aliceblue;
+    height: 100%;
+}
+.btn_gestion, h1{
+    display: flex;
+    justify-content: center;
+}
+
+.btn_gestion{
+    display: flex;
+    margin-top: 10%;
 }
