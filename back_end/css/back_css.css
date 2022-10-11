@@ -2,13 +2,30 @@ body{
     background-color: darkblue;
     color: aliceblue;
     height: 100%;
+    text-align: center;
 }
+
+h1{
+    margin-top: 5%;
+}
+
+.btn_back{
+    width: 230px;
+    height: 100px;
+}
+
 .btn_gestion, h1{
     display: flex;
     justify-content: center;
 }
 
 .btn_gestion{
+    justify-content: space-around;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.btn_gestion{
     display: flex;
-    margin-top: 10%;
+    margin-top: 18%;
 }

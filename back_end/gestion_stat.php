@@ -6,7 +6,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="css/back_css.css">
         <title>
-            Gestion Utilisateur
+            Statistique
         </title>
     </head>
     <body>
@@ -14,7 +14,8 @@
             include_once('Fh/back_header.php');
         ?>
         <div>
-            <div class=""></div>
+            <div>Nombre de compte client</div>
+            <div>Nombre de produit</div>
         </div>
     </body>
 </html>

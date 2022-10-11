@@ -11,17 +11,35 @@
     <h1>
         BACK OFFICE
     </h1>
+    <p>
+        <strong>
+            Bienvenue !
+        </strong>
+    </p>
+    <p>
+        Vous voici dans le back_end du site <strong>PCompare</strong>, ici vous pourrez gerer vos utilisateur ainsi que votre propre produits
+    </p>
+    <p>
+        Ainsi que de voir les statistiques de votre site web.
+    </p>
     <div class="btn_gestion">
         <div id="btn_prod">
             <form action="gestion_prod.php">
-                <button>
+                <button class="btn_back">
                     Gerer vos produits
+                </button>
+            </form>
+        </div>
+        <div>
+            <form action="gestion_stat.php">
+                <button class="btn_back">
+                    Regarder vos statistiques
                 </button>
             </form>
         </div>
         <div id="btn_uti">
             <form action="gestion_uti.php">
-                <button >
+                <button class="btn_back">
                     Gerer vos utilisateur
                 </button>
             </form>
