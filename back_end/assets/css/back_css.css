@@ -14,18 +14,18 @@ h1{
     height: 100px;
 }
 
-.btn_gestion, h1{
+.btn_choice, h1{
     display: flex;
     justify-content: center;
 }
 
-.btn_gestion{
+.btn_choice{
     justify-content: space-around;
     margin-left: 5%;
     margin-right: 5%;
 }
 
-.btn_gestion{
+.btn_choice{
     display: flex;
     margin-top: 18%;
 }

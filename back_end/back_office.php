@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/back_css.css">
+    <link rel="stylesheet" href="assets/css/back_css.css">
     <title>PCompare : Back_Office</title>
 </head>
 <body>
@@ -22,7 +22,7 @@
     <p>
         Ainsi que de voir les statistiques de votre site web.
     </p>
-    <div class="btn_gestion">
+    <div class="btn_choice">
         <div id="btn_prod">
             <form action="gestion_prod.php">
                 <button class="btn_back">
@@ -45,6 +45,5 @@
             </form>
         </div>
     </div>
-    
 </body>
 </html>
