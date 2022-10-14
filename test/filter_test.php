@@ -13,6 +13,6 @@
     <title>Test</title>
 </head>
 <body>
-    
+    <script src="test.js"></script>
 </body>
 </html>
