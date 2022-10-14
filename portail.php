@@ -27,6 +27,11 @@
                 <button id="hide" onclick=hideabracadabra()>
                     Tout cacher
                 </button>
+                <form action="back_end/back_office.php">
+                    <button>
+                        !TEST! back office
+                    </button>
+                </form>
                 <button id="register" onclick=abracadabrasse()>
                     Register
                 </button>
