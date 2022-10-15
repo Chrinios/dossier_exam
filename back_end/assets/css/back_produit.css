@@ -33,6 +33,17 @@
         width: 100%;
     }
 
+    #modif_suppr_produit{
+        display: none;
+    }
+
+    .table{
+        display: flex;
+        justify-content: center;
+        margin-top: 2%;
+    }
+        
+
     /*Partie Bouton*/
         .btn-gestion{
             width: 135px;

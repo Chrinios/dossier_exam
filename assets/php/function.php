@@ -8,7 +8,7 @@
             $DATABASE_NAME = 'db_pcompare';
         
             try{
-                return new PDO('mysql:host='.$DATABASE_HOST. ';dbname=' . $DATABASE_NAME . ';charset=utf8', $DATABASE_USER, $DATABASE_PASS);
+                return $connect_pdo = new PDO('mysql:host='.$DATABASE_HOST. ';dbname=' . $DATABASE_NAME . ';charset=utf8', $DATABASE_USER, $DATABASE_PASS);
             } 
             catch(PDOException $exception){
                 exit('failed to connect bdd');
