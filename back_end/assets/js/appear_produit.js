@@ -11,7 +11,6 @@ function appear_modif_suppr(){
 
 
 //Début partie Ajout de produit
-
     //Faire apparaitre le form lui étant associé et faire disparaitre les autres
     function appear_alim(){
         document.getElementById("alim.form").style.display = "block";

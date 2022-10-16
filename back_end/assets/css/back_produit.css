@@ -13,6 +13,12 @@
         margin-top: 4%;
         text-align: center;
     }
+    select{
+        display: flex;
+        width: 208px;
+        margin-top: 4%;
+        text-align: center;
+    }
 
     #add_all_produit, form{
         display: none;
@@ -32,6 +38,7 @@
         flex-direction: column;
         width: 100%;
     }
+
 
     #modif_suppr_produit{
         display: none;

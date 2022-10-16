@@ -70,7 +70,7 @@ CREATE TABLE `memoire`(
     `prix` int(11) NOT NULL,
     `capacite` int(11) NOT NULL,
     `nb_barrette` int(11) NOT NULL,
-    `radiateur` int(1) NOT NULL,
+    `radiateur` varchar(255) NOT NULL,
     `utilisation` varchar(255) NOT NULL,
     `type_memoire` varchar(255) NOT NULL,
     `frequence` varchar(255) NOT NULL,
