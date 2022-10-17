@@ -433,12 +433,12 @@
         }
 
         //Pour modifier le compte
-        function modif($username, $email, $password){
+        function modif($email, $password){
             try{
                 $pdo = pdo_connect_account();
                 $sql = "UPDATE `account` 
-                        SET `id`='[value-1]',`username`='$username',`email`='$email',`password`='$password'
-                        WHERE 1";
+                        SET `password` = '123456'
+                        WHERE `account`.`email` = 'jacques@gmail.com'; ";
                 $pdo->exec($sql);
             }
             catch(PDOException $a){

@@ -47,42 +47,42 @@
                             </button>
                         </th>
                         <th>
-                            <button onclick="sortTable(0)">
+                            <button onclick="">
                                 Marque
                             </button>
                         </th>
                         <th>
-                            <button onclick="sortnum()">
+                            <button onclick="sortTable()">
                                 Prix(€)
                             </button>
                         </th>
                         <th>
-                            <button onclick="sortnum()">
+                            <button onclick="sortTable()">
                                 Capacite(To)
                             </button>
                         </th>
                         <th>
-                            <button onclick="sortnum()">
+                            <button onclick="sortTable()">
                                 Vitesse_rotation (RPM)
                             </button>
                         </th>
                         <th>
-                            <button onclick="sortnum()">
+                            <button onclick="sortTable()">
                                 Taille_cache (Mo)
                             </button>
                         </th>
                         <th>
-                            <button onclick="sortnum()">
+                            <button onclick="sortTable()">
                                 Format_disque
                             </button>
                         </th>
                         <th >
-                            <button onclick="sortUtilisation(0)">
+                            <button onclick="">
                                 Utilisation
                             </button>
                         </th>
                         <th >
-                            <button onclick="sortTechno(0)">
+                            <button onclick="">
                                 Techno_enregistrement
                             </button>
                         </th>

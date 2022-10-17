@@ -45,8 +45,8 @@
                         <input type="submit" value="Log-In">
                     </form>
                     <p>
-                        <!--Pour recreer sont password sur une nouvelle page, ou il y aura le nv mdp + le btn pour revenir a l'acceuil-->
-                        <a href="">
+                        <!--Pour recréer sont password sur une nouvelle page, ou il y aura le nv mdp + le btn pour revenir a l'acceuil-->
+                        <a href="gen_pwd.php">
                             Forget you Password?
                         </a>
                     </p>
