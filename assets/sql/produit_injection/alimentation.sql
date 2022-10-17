@@ -24,4 +24,5 @@ VALUE (
     '$norme_80_plus', 
     '$norme_alim', 
     '$multi_gpu', 
-    '$compatibilite_psu_cm');
+    '$compatibilite_psu_cm'
+);

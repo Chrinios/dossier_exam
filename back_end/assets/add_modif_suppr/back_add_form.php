@@ -137,8 +137,7 @@
                 <option value="Non">Non</option>
             </select>
 
-            <input type="number" name="boitier-fixation" placeholder="">
-            <select name="">
+            <select name="boitier-fixation">
                 <option value="">Fixation sans vis ?</option>
                 <option value="Oui">Oui</option>
                 <option value="Non">Non</option>
