@@ -1,0 +1,20 @@
+.case{
+    text-align: center;
+}
+
+#form_new_mdp{
+    display: flex;
+    width: 100%;
+    text-align: center;
+    flex-direction: column;
+}
+
+#part_mdp{
+    margin-bottom: 5%;
+}
+
+#mdp{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}

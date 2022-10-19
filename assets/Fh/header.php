@@ -6,7 +6,10 @@
 
 <div id="myhead">
     <div class="login-register">
-        <p>
+        <h1 id="titre">
+            PCompare
+        </h1>
+        <p id="btn_portail">
             <a href="portail.php">
                 Log-in ?
                 <i class="fa-sharp fa-solid fa-right-left fa-3x"></i>

@@ -39,6 +39,7 @@
             <!--Partie pour les forms-->
             <div class="formulaire">
                 <div id="form_log-in">
+                    <h1><u>Se Connecter</u></h1>
                     <form action="" method="get">
                         <input type="text" name="username" id="username" placeholder="Nom d'utilisation" required>
                         <input type="password" name="password" id="password" placeholder="Mot de passe" required>
@@ -52,6 +53,7 @@
                     </p>
                 </div>
                 <div id="form_register">
+                    <h1><u>S'Enregistrer</u></h1>
                     <form action="" method="post">
                         <input type="text" name="username" id="username" placeholder="Nom d'utilisation" required>
                         <input type="email" name="email" id="email" placeholder="Email" required>
@@ -68,10 +70,8 @@
                 $username = $_POST['username'];
                 $email = $_POST['email'];
                 $password = $_POST['password'];
-                die(
-                    create(
-                        $username, $email, $password
-                    )
+                create(
+                    $username, $email, $password
                 );
             }
         ?>

@@ -416,6 +416,20 @@
             }
         }
 
+        //Pour modifier le compte
+        function modify($email, $new_mdp){
+            try{
+                $pdo = pdo_connect_account();
+                $sql = "UPDATE `account` 
+                        SET `password` = '$new_mdp'
+                        WHERE `account`.`email` = '$email'; ";
+                $pdo->exec($sql);
+            }
+            catch(PDOException $a){
+                echo $sql . $a->getMessage();
+            }
+        }
+
         /*----------------PAS FONCTIONNEL------------------*/
 
         //Pour log-in dans un compte
@@ -425,20 +439,6 @@
                 $sql = "SELECT `id`, `username`, `email`, `password` 
                         FROM `account` 
                         WHERE 1";
-                $pdo->exec($sql);
-            }
-            catch(PDOException $a){
-                echo $sql . $a->getMessage();
-            }
-        }
-
-        //Pour modifier le compte
-        function modif($email, $password){
-            try{
-                $pdo = pdo_connect_account();
-                $sql = "UPDATE `account` 
-                        SET `password` = '123456'
-                        WHERE `account`.`email` = 'jacques@gmail.com'; ";
                 $pdo->exec($sql);
             }
             catch(PDOException $a){
