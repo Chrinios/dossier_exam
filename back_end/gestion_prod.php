@@ -17,9 +17,11 @@
         </title>
     </head>
     <body>
-        <?php
-            include_once($_SERVER['DOCUMENT_ROOT'] . '/dossier_exam/back_end/assets/Fh/back_header.php');
-        ?>
+        <header id="header">
+            <a href="back_office.php">
+                <button>Retourner a l'accueil du back_office</button>
+            </a>
+        </header>
         <h1>
             Gestionnaire de produit
         </h1>

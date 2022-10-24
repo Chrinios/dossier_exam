@@ -37,7 +37,7 @@ h1{
     color: aquamarine;
     background-color: black;
     padding: 16px;
-    width: 100%;
     border-bottom-left-radius: 15px;
     border-bottom-right-radius: 15px;
+    justify-content: center;
 }

@@ -8,7 +8,9 @@
             $DATABASE_NAME = 'db_pcompare';
         
             try{
-                return $connect_pdo = new PDO('mysql:host='.$DATABASE_HOST. ';dbname=' . $DATABASE_NAME . ';charset=utf8', $DATABASE_USER, $DATABASE_PASS);
+                return $connect_pdo = new PDO(
+                    'mysql:host='.$DATABASE_HOST. ';dbname=' . $DATABASE_NAME . ';charset=utf8', $DATABASE_USER, $DATABASE_PASS
+                );
             } 
             catch(PDOException $exception){
                 exit('failed to connect bdd');
@@ -393,7 +395,7 @@
         //Pour créer un message
         function sendmessage($nom, $prenom, $email, $phone, $titre, $message){
             try{
-                $pdo = pdo_connect();
+                $pdo = pdo_connect_account();
                 $sql = "INSERT INTO `message`(`id`,`nom`,`prenom`,`email`,`phone`,`titre`,`message`)
                         VALUE (NULL, '$nom','$prenom','$email','$phone','$titre','$message');";
                 $pdo->exec($sql);

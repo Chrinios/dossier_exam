@@ -12,6 +12,7 @@
             include_once('assets/Fh/header.php');
         ?>
         <div class="contenu">
+            <!--Partie Supérieur de l'acceuil avec Logo et descriptif du site rapide + phrase acrocheur-->
             <div class='logo-descriptif'>
                 <div class='logo'>
                     <img src="assets/img/compare.jpg" alt="">
@@ -27,6 +28,7 @@
             </div>
             <!--Quand on click sur chaque button, sa nous amene sur la liste des produits-->
             <div class='boite-composant'>
+                <!--Premiere ligne et premier bouton-->
                 <form action="comparateur.php" class='boite'>
                     <button class='btn-compare'><img src="assets/img/boitier.png" alt="">
                         <p>
@@ -34,7 +36,9 @@
                         </p>
                     </button>
                 </form>
+                <!--Partie Bouton pour avoir accès au différentes liste de produits du site-->
                 <div class='composant'>
+                    <!--Seconde Ligne-->
                     <form action="comparateur.php" class='CSP'>
                         <button class='btn-compare'><img src="assets/img/cg.png" alt="">
                             <p>
@@ -54,6 +58,7 @@
                             </p>
                         </button>
                     </form>
+                    <!--Troisème Ligne-->
                     <form action="comparateur.php" class='MCA'>
                         <button class='btn-compare'><img src="assets/img/memoire_ram.png" alt="">
                             <p>

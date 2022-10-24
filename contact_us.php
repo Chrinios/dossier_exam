@@ -50,15 +50,14 @@
             </div>
             <div class="return">
                 <p>
-                    <button>
-                        <a href="index.php">
+                    <a href="index.php">
+                        <button>
                             You want to return ?
-                        </a>
-                    </button>
+                        </button>
+                    </a>
                 </p>
             </div>
         </div>
-        <script src="../dossier_exam/assets/js/sticky.js"></script>
     </body>
 </html>
 
