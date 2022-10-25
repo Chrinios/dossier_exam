@@ -39,69 +39,36 @@
         </div>
 
         <!--Permet de modifier / supprimer des produits-->
-        <div id="modif_suppr_produit">
-            <div class="table">
-                <table id="myTable">
-                    <tr>
-                        <th>
-                            <button>
-                                Id
-                            </button>
-                        </th>
-                        <th>
-                            <button onclick="">
-                                Marque
-                            </button>
-                        </th>
-                        <th>
-                            <button onclick="sortTable()">
-                                Prix(€)
-                            </button>
-                        </th>
-                        <th>
-                            <button onclick="sortTable()">
-                                Capacite(To)
-                            </button>
-                        </th>
-                        <th>
-                            <button onclick="sortTable()">
-                                Vitesse_rotation (RPM)
-                            </button>
-                        </th>
-                        <th>
-                            <button onclick="sortTable()">
-                                Taille_cache (Mo)
-                            </button>
-                        </th>
-                        <th>
-                            <button onclick="sortTable()">
-                                Format_disque
-                            </button>
-                        </th>
-                        <th >
-                            <button onclick="">
-                                Utilisation
-                            </button>
-                        </th>
-                        <th >
-                            <button onclick="">
-                                Techno_enregistrement
-                            </button>
-                        </th>
-                    </tr>  
-                    <?php 
-                        require_once($_SERVER['DOCUMENT_ROOT'] . '/dossier_exam/back_end/assets/add_modif_suppr/back_modif_suppr.php') 
-                    ?>
-                </table>
-            </div>
-            
+        <div id="list_produit">
+            <?php
+                require_once($_SERVER['DOCUMENT_ROOT'] . '/dossier_exam/back_end/assets/add_modif_suppr/back_modif_form.php');
+            ?>
+        </div>
+
+        <div id="suppr_modif">
+            <h3><u>Suppression de produit</u></h3>
+            <form action="" method="post" id="form_suppr">
+                <select name="select_products" id="select_product">
+                    <option value="">--Catégorie du produit--</option>
+                    <option value="alimentation">Alimentation</option>
+                    <option value="boitier">Boitier</option>
+                    <option value="cg">Carte-Graphique</option>
+                    <option value="cm">Carte-Mère</option>
+                    <option value="memoire">Mémoire</option>
+                    <option value="processeur">Processeur</option>
+                    <option value="stockage">Stockage</option>
+                </select>
+                <p>Entrer l'ID du produit ici et il sera supprimé</p>
+                <input type="text" name="id_new" placeholder="Id du produit">
+                <button type="submit" name="suppr_product" class="suppr_product">Supprimer le produit</button>
+            </form>
         </div>
 
         <!--Permet de faire la connection entre les données inséré dans le form et dans les emplacements pour envoyer a la bdd-->
         <?php
             require_once($_SERVER['DOCUMENT_ROOT'] . '/dossier_exam/back_end/assets/php/ajout_produit.php');
+            require_once($_SERVER['DOCUMENT_ROOT'] . '/dossier_exam/back_end/assets/php/suppr_produit.php');
         ?>
         <script src="assets/js/appear_produit.js"></script>
-        <script src="assets/js/sort_table.js"></script>
     </body>
 </html>

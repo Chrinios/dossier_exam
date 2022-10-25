@@ -144,7 +144,7 @@
                         `utilisation`, 
                         `bus`, 
                         `sorties_videos`, 
-                        `type_refrodissement`
+                        `type_refroidissement`
                     )
                     VALUE (
                         NULL,
@@ -157,7 +157,7 @@
                         '$utilisation', 
                         '$bus', 
                         '$sorties_videos', 
-                        '$type_refrodissement'
+                        '$type_refroidissement'
                     );";
                     $pdo->exec($sql);
                 }
@@ -333,6 +333,7 @@
                     echo $sql . $a->getMessage();
                 }
             }
+            
             function add_stockage(
                     $marque, 
                     $prix, 
@@ -374,6 +375,24 @@
                 }
             }
         //Fin Ajout produit
+        //Début Modification Produit
+            function modif_produit(){
+
+            }
+        //Fin Modification Produit
+        //Début Suppression Produit
+            function suppr_produit($categorie ,$new_id){
+                try{
+                    $pdo = pdo_connect();
+                    $sql = "DELETE FROM `$categorie` 
+                            WHERE `id` = '$new_id'; ";
+                    $pdo->exec($sql);
+                }
+                catch(PDOException $a){
+                    echo $sql . $a->getMessage();
+                }
+            }
+        //Fin Suppression Produit
     //Fin Partie Produit
     
     //Début Partie Compte
@@ -432,6 +451,19 @@
             }
         }
 
+        //Pour supprimer le compte
+        function suppr($email, $password){
+            try{
+                $pdo = pdo_connect_account();
+                $sql = "DELETE FROM `account` 
+                        WHERE `email` = '$email'";
+                $pdo->exec($sql);
+            }
+            catch(PDOException $a){
+                echo $sql . $a->getMessage();
+            }
+        }
+
         /*----------------PAS FONCTIONNEL------------------*/
 
         //Pour log-in dans un compte
@@ -448,18 +480,7 @@
             }
         }
 
-        //Pour supprimer le compte
-        function suppr($username, $email, $password){
-            try{
-                $pdo = pdo_connect_account();
-                $sql = "DELETE FROM `account` 
-                        WHERE 0";
-                $pdo->exec($sql);
-            }
-            catch(PDOException $a){
-                echo $sql . $a->getMessage();
-            }
-        }
+
 
     //Fin Partie Compte
 ?>

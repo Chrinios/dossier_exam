@@ -3,7 +3,7 @@
         <button class="btn-gestion" onclick="appear_alim()">Alimentation</button>
         <form action="" method="post" id="alim.form">
 
-            <select name="alim-marque">
+            <select name="alim-marque" class="form_add_select">
                 <option value="">Marque</option>
                 <option value="Aerocool">Aerocool</option>
                 <option value="Antec">Antec</option>
@@ -23,29 +23,29 @@
                 <option value="Thermaltake">Thermaltake</option>
             </select>
 
-            <input type="number" name="alim-prix" placeholder="Prix">
-            <input type="number" name="alim-puissance" placeholder="Puissance">
+            <input type="number" name="alim-prix" class="form_input" placeholder="Prix">
+            <input type="number" name="alim-puissance" class="form_input" placeholder="Puissance">
 
-            <select name="alim-modulaire">
+            <select name="alim-modulaire" class="form_add_select">
                 <option value="">Modulaire ?</option>
                 <option value="Oui">Oui</option>
                 <option value="Non">Non</option>
             </select>
 
-            <select name="alim-silencieux">
+            <select name="alim-silencieux" class="form_add_select">
                 <option value="">Silencieux ?</option>
                 <option value="Oui">Oui</option>
                 <option value="Non">Non</option>
             </select>
 
-            <select name="alim-format">
+            <select name="alim-format" class="form_add_select">
                 <option value="">Format</option>
                 <option value="ATX_EPS">ATX EPS</option>
                 <option value="SFX">SFX</option>
                 <option value="SFX_L">SFX L</option>
             </select>
 
-            <select name="alim-norme-80">
+            <select name="alim-norme-80" class="form_add_select">
                 <option value="">Norme 80+</option>
                 <option value="80_Plus">80_Plus</option>
                 <option value="">---80 Plus---</option>
@@ -55,14 +55,14 @@
                 <option value="80_Plus_Titanium">Titanium</option>
             </select>
 
-            <select name="alim-norme-alim">
+            <select name="alim-norme-alim" class="form_add_select">
                 <option value="">Norme Alim</option>
                 <option value="ATX_12V">ATX_12V</option>
                 <option value="EPS_12V">EPS_12V</option>
                 <option value="SFX">SFX</option>
             </select>
 
-            <select name="alim-multi">
+            <select name="alim-multi" class="form_add_select">
                 <option value="">Multi GPU</option>
                 <option value="Aucun">Aucun</option>
                 <option value="">---3 Way---</option>
@@ -77,7 +77,7 @@
                 <option value="SLi">SLi</option>
             </select>
 
-            <select name="alim-compatibilite">
+            <select name="alim-compatibilite" class="form_add_select">
                 <option value="">Compatibilité PSU-CM</option>
                 <option value="Aucun">Aucun</option>
                 <option value="">---12V---</option>
@@ -88,14 +88,16 @@
                 <option value="12V_P8_et_12V_P8">P8 et P8</option>
             </select>
 
-            <input type="submit" name="ajout_alim" value="Enregistrer le produit" class="enregistrer">
+            <button type="submit" name="ajout_alim" class="enregistrer">
+                Enregistrer le produit
+            </button>
         </form>
     </div>
     <div id="boitier">
         <button class="btn-gestion" onclick="appear_boitier()">Boitier</button>
-        <form action="" method="post" id="boitier.form">
+        <form action="" method="post" id="boitier.form" class="form_add">
 
-            <select name="boitier-marque">
+            <select name="boitier-marque" class="form_add_select">
                 <option value="">Marque</option>
                 <option value="Aérocool">Aérocool</option>
                 <option value="Antec">Antec</option>
@@ -117,33 +119,33 @@
                 <option value="Zalman">Zalman</option>
             </select>
 
-            <input type="number" name="boitier-prix" placeholder="Prix">
+            <input type="number" name="boitier-prix" class="form_input" placeholder="Prix">
 
-            <select name="boitier-fenetre">
+            <select name="boitier-fenetre" class="form_add_select">
                 <option value="">Fenetré ?</option>
                 <option value="Oui">Oui</option>
                 <option value="Non">Non</option>
             </select>
 
-            <select name="boitier-water">
+            <select name="boitier-water" class="form_add_select">
                 <option value="">Watercooling ?</option>
                 <option value="Oui">Oui</option>
                 <option value="Non">Non</option>
             </select>
 
-            <select name="boitier-alim">
+            <select name="boitier-alim" class="form_add_select">
                 <option value="">Alim fournie ?</option>
                 <option value="Oui">Oui</option>
                 <option value="Non">Non</option>
             </select>
 
-            <select name="boitier-fixation">
+            <select name="boitier-fixation" class="form_add_select">
                 <option value="">Fixation sans vis ?</option>
                 <option value="Oui">Oui</option>
                 <option value="Non">Non</option>
             </select>
 
-            <select name="boitier-format-boitier">
+            <select name="boitier-format-boitier" class="form_add_select">
                 <option value="">Format du Boitier</option>
                 <option value="Desktop">Desktop</option>
                 <option value="Grand_Tour">Grand_Tour</option>
@@ -151,7 +153,7 @@
                 <option value="Mini_tour">Mini_tour</option>
             </select>
 
-            <select name="boitier-format-cm">
+            <select name="boitier-format-cm" class="form_add_select">
                 <option value="">Format Carte-mère</option>
                 <option value="ATX">ATX</option>
                 <option value="DTX">DTX</option>
@@ -168,7 +170,7 @@
                 <option value="XL_ATX">ATX</option>
             </select>
 
-            <select name="boitier-couleur">
+            <select name="boitier-couleur" class="form_add_select">
                 <option value="">Couleur</option>
                 <option value="Anthracite">Anthracite</option>
                 <option value="Argent">Argent</option>
@@ -183,13 +185,13 @@
                 <option value="Violet">Violet</option>
             </select>
 
-            <select name="boitier-led-rgb">
+            <select name="boitier-led-rgb" class="form_add_select">
                 <option value="">LED / RGB ?</option>
                 <option value="Oui">Oui</option>
                 <option value="Non">Non</option>
             </select>
 
-            <select name="boitier-materiaux">
+            <select name="boitier-materiaux" class="form_add_select">
                 <option value="">Matériaux</option>
                 <option value="ABS">ABS</option>
                 <option value="Acier">Acier</option>
@@ -203,7 +205,7 @@
                 <option value="Verre_Trempe">Verre Trempé</option>
             </select>
 
-            <select name="boitier-connecteur">
+            <select name="boitier-connecteur" class="form_add_select">
                 <option value="">Connecteur disponible</option>
                 <option value="">---Casque Jack---</option>
                 <option value="Casque_jack_3.5mm_Femelle">3.5mm Femelle</option>
@@ -233,13 +235,15 @@
                 <option value=""></option>
             </select>
 
-            <input type="submit" name="ajout_boitier" value="Enregistrer le produit" class="enregistrer">
+            <button type="submit" name="ajout_boitier" class="enregistrer">
+                Enregistrer le produit
+            </button>
         </form>
     </div>
     <div id="carte_graphique">
         <button class="btn-gestion" onclick="appear_cg()">Carte Graphique</button>
-        <form action="" method="post" id="cg.form">
-            <select name="cg-marque">
+        <form action="" method="post" id="cg.form" class="form_add">
+            <select name="cg-marque" class="form_add_select">
                 <option value="">Marque</option>
                 <option value="AMD">AMD</option>
                 <option value="ASRock">ASRock</option>
@@ -257,22 +261,22 @@
                 <option value="Zotac">Zotac</option>
             </select>
 
-            <input type="number" name="cg-prix" placeholder="Prix">
+            <input type="number" name="cg-prix" class="form_input" placeholder="Prix">
 
-            <select name="cg-overclock">
+            <select name="cg-overclock" class="form_add_select">
                 <option value="">Overclocké ?</option>
                 <option value="Oui">Oui</option>
                 <option value="Non">Non</option>
 
             </select>
 
-            <select name="cg-vr">
+            <select name="cg-vr" class="form_add_select">
                 <option value="">VR ?</option>
                 <option value="Oui">Oui</option>
                 <option value="Non">Non</option>
             </select>
 
-            <select name="cg-chipset">
+            <select name="cg-chipset" class="form_add_select">
                 <option value="">Chipset</option>
                 <option value="">---AMD_Radeon_RX---</option>
                 <option value="AMD_Radeon_RX_6400">6400</option>
@@ -307,9 +311,9 @@
                 <option value="Nvidia_Geforce_Gtx_3090_Ti">3090Ti</option>
             </select>
 
-            <input type="number" name="cg-taille-memoire" placeholder="Taille mémoire video" min="0">
+            <input type="number" name="cg-taille-memoire" class="form_input" placeholder="Taille mémoire video">
 
-            <select name="cg-utilisation">
+            <select name="cg-utilisation" class="form_add_select">
                 <option value="">Utilisation</option>
                 <option value="">---Gamer---</option>
                 <option value="Gamer_AMD">AMD</option>
@@ -319,7 +323,7 @@
                 <option value="Multimédia_Nvidia_GT">Nvidia GT</option>
             </select>
 
-            <select name="cg-bus">
+            <select name="cg-bus" class="form_add_select">
                 <option value="">Bus</option>
                 <option value="">---PCI_Express---</option>
                 <option value="">---2.0---</option>
@@ -334,7 +338,7 @@
                 <option value="Thunderbolt_3">Thunderbolt 3</option>
             </select>
 
-            <select name="cg-sortie-video">
+            <select name="cg-sortie-video" class="form_add_select">
                 <option value="">Sorties Vidéos</option>
                 <option value="">---Display_Port---</option>
                 <option value="DisplayPort__Femelle">Femelle</option>
@@ -345,22 +349,24 @@
                 <option value="VGA_D-sub_15_Femelle">VGA D-sub 15 Femelle</option>
             </select>
 
-            <select name="cg-refroidissement">
+            <select name="cg-refroidissement" class="form_add_select">
                 <option value="">Refroidissement</option>
                 <option value="Actif_fansink">Actif Fansink</option>
                 <option value="Passif_fanless">Passif Fanless</option>
                 <option value="Watercooling">Watercooling</option>
             </select>
 
-            <input type="submit" name="ajout_cg" value="Enregistrer le produit" class="enregistrer">
+            <button type="submit" name="ajout_cg" class="enregistrer">
+                Enregistrer le produit
+            </button>
         </form>
     </div>
 </div>
 <div class="cm_memoire_processeur">
     <div id="carte_mere">
         <button class="btn-gestion" onclick="appear_cm()">Carte Mère</button>
-        <form action="" method="post" id="cm.form">
-            <select name="cm-marque">
+        <form action="" method="post" id="cm.form" class="form_add">
+            <select name="cm-marque" class="form_add_select">
                 <option value="">Marque</option>
                 <option value="ASRock">ASRock</option>
                 <option value="Asus">Asus</option>
@@ -369,9 +375,9 @@
                 <option value="NZXT">NZXT</option>
             </select>
 
-            <input type="number" name="cm-prix" placeholder="Prix">
+            <input type="number" name="cm-prix" class="form_input" placeholder="Prix">
 
-            <select name="cm-nb-slot">
+            <select name="cm-nb-slot" class="form_add_select">
                 <option value="0">Nombre de slot</option>
                 <option value="1">1</option>
                 <option value="2">2</option>
@@ -380,19 +386,19 @@
                 <option value="5">5</option>
             </select>
 
-            <select name="cm-led">
+            <select name="cm-led" class="form_add_select">
                 <option value="">LED ?</option>
                 <option value="Oui">Oui</option>
                 <option value="Non">Non</option>
             </select>
 
-            <select name="cm-raid">
+            <select name="cm-raid" class="form_add_select">
                 <option value="">Support Raid ?</option>
                 <option value="Oui">Oui</option>
                 <option value="Non">Non</option>
             </select>
 
-            <select name="cm-support-processeur">
+            <select name="cm-support-processeur" class="form_add_select">
                 <option value="">Support pour le Processeur</option>
                 <option value="">---AMD---</option>
                 <option value="AMD_AM4">AM4</option>
@@ -405,7 +411,7 @@
                 <option value="Intel_2066">2066</option>
             </select>
 
-            <select name="cm-format">
+            <select name="cm-format" class="form_add_select">
                 <option value="">Format de la Carte-mère</option>
                 <option value="ATX">ATX</option>
                 <option value="E-ATX">E-ATX</option>
@@ -416,7 +422,7 @@
                 <option value="SSI_EEB">SSI EEB</option>
             </select>
 
-            <select name="cm-chipset">
+            <select name="cm-chipset" class="form_add_select">
                 <option value="">Chipset</option>
                 <option value="">---AMD---</option>
                 <option value="AMD_A320">A320</option>
@@ -443,14 +449,14 @@
                 <option value="Intel_Z790_Express">Z790_Express</option>
             </select>
 
-            <select name="cm-memoire">
+            <select name="cm-memoire" class="form_add_select">
                 <option value="">Type de mémoire</option>
                 <option value="DDR4">DDR4</option>
                 <option value="DDR4_ECC">DDR4_ECC</option>
                 <option value="DDR5">DDR5</option>
             </select>
 
-            <select name="cm-frequence">
+            <select name="cm-frequence" class="form_add_select">
                 <option value="">Fréquence Mémoire Possible</option>
                 <option value="">---DDR4---</option>
                 <option value="DDR4_1866_MHz">1866 MHz</option>
@@ -525,7 +531,7 @@
                 <option value="DDR5_8000_MHz">8000 MHz</option>
             </select>
 
-            <select name="cm-type-gpu">
+            <select name="cm-type-gpu" class="form_add_select">
                 <option value="">Type de multi-GPU</option>
                 <option value="3-way_CrossfireX">3-way CrossfireX</option>
                 <option value="3-way_SLi">3-way SLi</option>
@@ -535,7 +541,7 @@
                 <option value="Sli">Sli</option>
             </select>
 
-            <select name="cm-connecteur-graphique">
+            <select name="cm-connecteur-graphique" class="form_add_select">
                 <option value="">Connecteur Graphique</option>
                 <option value="">---PCI Express--</option>
                 <option value="PCI_Express_2.0_16x_4x">2.0 16x 4x</option>
@@ -557,25 +563,25 @@
                 <option value="PCI_Express_5.0_16x_8x">16x 8x</option>
             </select>
 
-            <select name="cm-connecteur-disque">
+            <select name="cm-connecteur-disque" class="form_add_select">
                 <option value="">Connecteur Disque</option>
                 <option value="DIMM.2_PCI-E_4.0_4x">DIMM.2 PCI-E 4.0 4x</option>
                 <option value="">---M.2_PCI-E---</option>
                 <option value="">---2.0--</option>
-                <option value="M.2_PCI-E_2.0_"></option>
-                <option value="M.2_PCI-E_2.0_"></option>
+                <option value="M.2_PCI-E_2.0_4x">4x</option>
+                <option value="M.2_PCI-E_2.0_4x_SATA_6Gb/s">4x + SATA 6Gb/s</option>
                 <option value="">---3.0---</option>
-                <option value="M.2_PCI-E_3.0_"></option>
-                <option value="M.2_PCI-E_3.0_"></option>
-                <option value="M.2_PCI-E_3.0_"></option>
-                <option value="M.2_PCI-E_3.0_"></option>
+                <option value="M.2_PCI-E_3.0_2x">2x</option>
+                <option value="M.2_PCI-E_3.0_2x_SATA_6Gb/s">2x + SATA 6Gb/s</option>
+                <option value="M.2_PCI-E_3.0_4x">4x</option>
+                <option value="M.2_PCI-E_3.0_4x_SATA_6Gb/s">4x + SATA 6Gb/s</option>
                 <option value="">---4.0---</option>
-                <option value="M.2_PCI-E_4.0_"></option>
-                <option value="M.2_PCI-E_4.0_"></option>
-                <option value="M.2_PCI-E_4.0_"></option>
-                <option value="M.2_PCI-E_4.0_"></option>
+                <option value="M.2_PCI-E_4.0_2x">2x</option>
+                <option value="M.2_PCI-E_4.0_2x_SATA_6Gb/s">2x + SATA 6Gb/s</option>
+                <option value="M.2_PCI-E_4.0_4x">4x</option>
+                <option value="M.2_PCI-E_4.0_4x_SATA_6Gb/s">4x + SATA 6Gb/s</option>
                 <option value="">---5.0---</option>
-                <option value="M.2_ PCI-E_5.0_"></option>
+                <option value="M.2_ PCI-E_5.0_4x">4x</option>
                 <option value="">---Spécial---</option>
                 <option value="M.2_SATA_6Gb/s">M.2 SATA 6Gb/s</option>
                 <option value="M.2_ PCI-E_1x_SATA_6Gb/s">M.2 PCI-E 1x SATA 6Gb/s</option>
@@ -585,7 +591,7 @@
                 <option value="U.2_PCI-E_3.0_4x_NVMe">U.2</option>
             </select>
 
-            <select name="cm-norme-reseaux">
+            <select name="cm-norme-reseaux" class="form_add_select">
                 <option value="">Norme Réseaux</option>
                 <option value="">---Ethernet---</option>
                 <option value="10_Gbps_Gigabit_Ethernet_10_GbE">10Gbps 10GbE</option>
@@ -605,21 +611,23 @@
                 <option value="Wi-Fi_AC">AC</option>
             </select>
 
-            <select name="cm-utilisation">
+            <select name="cm-utilisation" class="form_add_select">
                 <option value="">Utilisation</option>
                 <option value="Bureautique">Bureautique</option>
                 <option value="Gamer">Gamer</option>
                 <option value="Multimédia">Multimédia</option>
                 <option value="Serveur">Serveur</option>
             </select>
-            <input type="submit" name="ajout_cm" value="Enregistrer le produit" class="enregistrer">
+            <button type="submit" name="ajout_cm" class="enregistrer">
+                Enregistrer le produit
+            </button>
         </form>
     </div>
     <div id="memoire">
         <button class="btn-gestion" onclick="appear_memoire()">Memoire</button>
-        <form action="" method="post" id="memoire.form">
+        <form action="" method="post" id="memoire.form" class="form_add">
 
-            <select name="memoire-marque">
+            <select name="memoire-marque" class="form_add_select">
                 <option value="">Marque</option>
                 <option value="Ballistix">Ballistix</option>
                 <option value="Corsair">Corsair</option>
@@ -632,10 +640,10 @@
                 <option value="Textorm">Textorm</option>
             </select>
 
-            <input type="number" name="memoire-prix" placeholder="Prix">
-            <input type="number" name="memoire-capacite" placeholder="Capacité">
+            <input type="number" name="memoire-prix" class="form_input" placeholder="Prix">
+            <input type="number" name="memoire-capacite" class="form_input" placeholder="Capacité">
 
-            <select name="memoire-nb-barette">
+            <select name="memoire-nb-barette" class="form_add_select">
                 <option value="0">Nombre de Barette</option>
                 <option value="1">1</option>
                 <option value="2">2</option>
@@ -647,26 +655,26 @@
                 <option value="8">8</option>
             </select>
 
-            <select name="memoire-radiateur">
+            <select name="memoire-radiateur" class="form_add_select">
                 <option value="">Radiateur ?</option>
                 <option value="Oui">Oui</option>
                 <option value="Non">Non</option>
             </select>
 
-            <select name="memoire-utilisation">
+            <select name="memoire-utilisation" class="form_add_select">
                 <option value="">Utilisation</option>
                 <option value="PC_bureau">PC de bureau</option>
                 <option value="PC_portable">PC portable</option>
             </select>
 
-            <select name="memoire-type-memoire">
+            <select name="memoire-type-memoire" class="form_add_select">
                 <option value="">Type</option>
                 <option value="DDR3" onclick="">DDR3</option>
                 <option value="DDR4" onclick="">DDR4</option>
                 <option value="DDR5" onclick="">DDR5</option>
             </select>
 
-            <select name="memoire-frequence">
+            <select name="memoire-frequence" class="form_add_select">
                 <option value="">Fréquence de la mémoire</option>
                 <option value="">--Début DDR3--</option>
                 <option value="1066_MHz">1066 MHz</option>
@@ -716,7 +724,7 @@
                 <option value="">---Fin DDR5---</option>
             </select>
 
-            <select name="memoire-format">
+            <select name="memoire-format" class="form_add_select">
                 <option value="">Format de la mémoire</option>
                 <option value="DIMM_240_pins_DDR3">DIMM 240 pins DDR3</option>
                 <option value="DIMM_288_pins_DDR4">DIMM 288 pins DDR4</option>
@@ -726,7 +734,7 @@
                 <option value="SO_DIMM_262_pins_DDR5">SO DIMM 262 pins DDR5</option>
             </select>
 
-            <select name="memoire-specification">
+            <select name="memoire-specification" class="form_add_select">
                 <option value="">Spécification</option>
                 <option value="Dual_Rank">Dual Rank</option>
                 <option value="Low_Voltage">Low Voltage</option>
@@ -734,7 +742,7 @@
                 <option value="Unbuffered">Unbuffered</option>
             </select>
 
-            <select name="memoire-couleur-radiateur">
+            <select name="memoire-couleur-radiateur" class="form_add_select">
                 <option value="">Couleur du Radiateur</option>
                 <option value="Argent">Argent</option>
                 <option value="Blanc">Blanc</option>
@@ -748,28 +756,31 @@
                 <option value="Noir_gris">Noir Gris</option>
                 <option value="Noir_rouge">Noir Rouge</option>
             </select>
-            <input type="submit" name="ajout_memoire" value="Enregistrer le produit" class="enregistrer">
+            <button type="submit" name="ajout_memoire" class="enregistrer">
+                Enregistrer le produit
+            </button>
         </form>
     </div>
     <div id="processeur">
         <button class="btn-gestion" onclick="appear_processeur()">Processeur</button>
-        <form action="" method="post" id="processeur.form">
-            <select name="processeur-marque">
+        <form action="" method="post" id="processeur.form" class="form_add">
+            <select name="processeur-marque" class="form_add_select">
                 <option value="AMD">AMD</option>
                 <option value="INTEL">Intel</option>
             </select>
-            <input type="number" name="processeur-prix" placeholder="Prix">
-            <input type="number" name="processeur-frequence" placeholder="Fréquence">
-            <input type="number" name="processeur-nb-core" placeholder="Nombre de core">
-            <input type="number" name="processeur-tdp" placeholder="Tdp (Enveloppe Thermique)">
 
-            <select name="processeur-boite">
+            <input type="number" name="processeur-prix" class="form_input" placeholder="Prix">
+            <input type="number" name="processeur-frequence" class="form_input" placeholder="Fréquence">
+            <input type="number" name="processeur-nb-core" class="form_input" placeholder="Nombre de core">
+            <input type="number" name="processeur-tdp" class="form_input" placeholder="Tdp (Enveloppe Thermique)">
+
+            <select name="processeur-boite" class="form_add_select">
                 <option value="">Version Boite ?</option>
                 <option value="Oui">Oui</option>
                 <option value="Non">Non</option>
             </select>
 
-            <select name="processeur-finesse-gravure">
+            <select name="processeur-finesse-gravure" class="form_add_select">
                 <option value="">Finesse Gravure en Nm</option>
                 <option value="5">5</option>
                 <option value="6">6</option>
@@ -783,13 +794,13 @@
                 <option value="14">14</option>
             </select>
 
-            <select name="processeur-controleur-intergre">
+            <select name="processeur-controleur-intergre" class="form_add_select">
                 <option value="">Contrôleur Intégré ?</option>
                 <option value="Oui">Oui</option>
                 <option value="Non">Non</option>
             </select>
 
-            <select name="processeur-modele">
+            <select name="processeur-modele" class="form_add_select">
                 <option value="">Modèle</option>
                 <option value="">---AMD--</option>
                 <option value="AMD_Ryzen_3">Ryzen 3</option>
@@ -808,7 +819,7 @@
                 <option value="Intel_Pentium">Pentium</option>
             </select>
 
-            <select name="processeur-support">
+            <select name="processeur-support" class="form_add_select">
                 <option value="">Support</option>
                 <option value="">---AMD---</option>
                 <option value="AMD_AM4">AM4</option>
@@ -821,7 +832,7 @@
                 <option value="Intel_2066">2066</option>
             </select>
 
-            <select name="processeur-plateforme">
+            <select name="processeur-plateforme" class="form_add_select">
                 <option value="">Plateforme</option>
                 <option value="">---AMD---</option>
                 <option value="AMD_Zen_2">Zen_2</option>
@@ -837,7 +848,7 @@
                 <option value="Intel_Raptor_Lake-S">Raptor Lake-S</option>
             </select>
 
-            <select name="processeur-chipset">
+            <select name="processeur-chipset" class="form_add_select">
                 <option value="">Chipset ?</option>
                 <option value="Aucune">Aucune</option>
                 <option value="">---AMD---</option>
@@ -854,7 +865,8 @@
                 <option value="Intel_UHD_Graphics_770">770</option>
             </select>
 
-            <select name="processeur-nom-core">
+            <select name="processeur-nom-core" class="form_add_select">
+                <option value="">Nom du Core</option>
                 <option value="Alder_Lake">Alder Lake</option>
                 <option value="Cascade_Lake_X">Cascade_Lake X</option>
                 <option value="Castle_Peak">Castle Peak</option>
@@ -871,15 +883,17 @@
                 <option value="Vermeer">Vermeer</option>
             </select>
 
-            <input type="submit" name="ajout_processeur" value="Enregistrer le produit" class="enregistrer">
+            <button type="submit" name="ajout_processeur" class="enregistrer">
+                Enregistrer le produit
+            </button>
         </form>
     </div>
 </div>
 <div id="stockage">
     <button class="btn-gestion" onclick="appear_stockage()">Stockage</button>
-    <form action="" method="post" id="stockage.form">
+    <form action="" method="post" id="stockage.form" class="form_add">
 
-        <select name="stockage-marque">
+        <select name="stockage-marque" class="form_add_select">
             <option value="">Marque</option>
             <option value="Seagate Technology">Seagate Technology</option>
             <option value="Toshiba">Toshiba</option>
@@ -887,18 +901,18 @@
             <option value="Western Digital">Western Digital</option>
         </select>
 
-        <input type="number" name="stockage-prix" placeholder="Prix">
-        <input type="number" name="stockage-capacite" placeholder="Capacité">
-        <input type="number" name="stockage-vitesse-rotation" placeholder="Vitesse de rotation">
-        <input type="number" name="stockage-taille-cache" placeholder="Taille du cache">
+        <input type="number" name="stockage-prix" class="form_input" placeholder="Prix">
+        <input type="number" name="stockage-capacite" class="form_input" placeholder="Capacité">
+        <input type="number" name="stockage-vitesse-rotation" class="form_input" placeholder="Vitesse de rotation">
+        <input type="number" name="stockage-taille-cache" class="form_input" placeholder="Taille du cache">
 
-        <select name="stockage-format">
+        <select name="stockage-format" class="form_add_select">
             <option value="">Format/Taille</option>
             <option value="2 pouces 1/2">2" 1/2</option>
             <option value="3 pouces 1/2">3" 1/2</option>
         </select>
 
-        <select name="stockage-utilisation">
+        <select name="stockage-utilisation" class="form_add_select">
             <option value="">Utilisation</option>
             <option value="Pour NAS">NAS</option>
             <option value="PC de bureau">PC de bureau</option>
@@ -906,7 +920,7 @@
             <option value="Serveur">Serveur</option>
         </select>
 
-        <select name="stockage-enregistrement">
+        <select name="stockage-enregistrement" class="form_add_select">
             <option value="">Techno d'Enregistrement</option>
             <option value="CMR">CMR</option>
             <option value="EAMR">EAMR</option>
@@ -914,6 +928,8 @@
             <option value="SMR">SMR</option>
             <option value="TDMR">TDMR</option>
         </select>
-        <input type="submit" name="ajout_stockage" value="Enregistrer le produit" class="enregistrer">
+        <button type="submit" name="ajout_stockage" class="enregistrer">
+            Enregistrer le produit
+        </button>
     </form>
 </div>

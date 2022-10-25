@@ -60,11 +60,11 @@
         $overclock = $_POST['cg-overclock'];
         $vr = $_POST['cg-vr'];
         $chipset = $_POST['cg-chipset'];
-        $taille_memoire_video = $_POST['cg-taille_memoire'];
+        $taille_memoire_video = $_POST['cg-taille-memoire'];
         $utilisation = $_POST['cg-utilisation'];
         $bus = $_POST['cg-bus'];
-        $sorties_videos = $_POST['cg-sortie_video'];
-        $type_refrodissement = $_POST['cg-refroidissement'];
+        $sorties_videos = $_POST['cg-sortie-video'];
+        $type_refroidissement = $_POST['cg-refroidissement'];
 
         add_cg(
             $marque,
@@ -76,12 +76,13 @@
             $utilisation, 
             $bus, 
             $sorties_videos, 
-            $type_refrodissement
+            $type_refroidissement
         );
     }
     elseif (isset($_POST['ajout_cm'])) {
-        $prix = $_POST['cm-marque'];
-        $nb_slot = $_POST['cm-prix'];
+        $marque = $_POST['cm-marque'];
+        $prix = $_POST['cm-prix'];
+        $nb_slot = $_POST['cm-nb-slot'];
         $led = $_POST['cm-led'];
         $raid_support = $_POST['cm-raid'];
         $support_proc = $_POST['cm-support-processeur'];
@@ -91,11 +92,12 @@
         $frequence = $_POST['cm-frequence'];
         $type_multi_gpu = $_POST['cm-type-gpu'];
         $connecteur_graph = $_POST['cm-connecteur-graphique'];
-        $connecteur_disque = $_POST['cm-connecteur-dique'];
+        $connecteur_disque = $_POST['cm-connecteur-disque'];
         $norme_reseaux = $_POST['cm-norme-reseaux'];
         $utilisation = $_POST['cm-utilisation'];
 
         add_cm(
+            $marque,
             $prix, 
             $nb_slot, 
             $led, 
@@ -147,7 +149,7 @@
         $tdp = $_POST['processeur-tdp'];
         $version_boite = $_POST['processeur-boite'];
         $finesse_gravure = $_POST['processeur-finesse-gravure'];
-        $controleur_integre = $_POST['processeur-controleur-integre'];
+        $controleur_integre = $_POST['processeur-controleur-intergre'];
         $modele = $_POST['processeur-modele'];
         $support = $_POST['processeur-support'];
         $plateforme = $_POST['processeur-plateforme'];

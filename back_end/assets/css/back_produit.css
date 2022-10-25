@@ -1,29 +1,25 @@
 /*Partie Formulaire*/
-
-    form{
+    /*Pour les formulaires d'ajout de produit*/
+    .form_add{
         display: flex;
         justify-content: center;
         flex-direction: column;
         text-align: center;
         margin-bottom: 5%;
     }
-    input{
+    .form_input{
         display: flex;
         width: 200px;
         margin-top: 4%;
         text-align: center;
     }
-    select{
+    .form_add_select{
         display: flex;
         width: 208px;
         margin-top: 4%;
         text-align: center;
     }
-
-    #add_all_produit, form{
-        display: none;
-    }
-
+    /*Partie*/
     .alim_boitier_cg, .cm_memoire_processeur{
         display: flex;
         justify-content: space-around;
@@ -32,24 +28,23 @@
         border-bottom: 5px solid red;
     }
 
-    #stockage{
+    #add_stockage{
         display: flex;
         align-items: center;
         flex-direction: column;
         width: 100%;
     }
 
-
-    #modif_suppr_produit{
-        display: none;
-    }
-
-    .table{
+    .table, #table_stockage{
         display: flex;
         justify-content: center;
         margin-top: 2%;
     }
-        
+
+    /*Liste des produits*/
+    #list_produit, #add_all_produit, #table_alim, #table_boitier, #table_cg, #table_cm, #table_memoire, #table_processeur, #table_stockage{
+        display: none;
+    }
 
     /*Partie Bouton*/
         .btn-gestion{
@@ -60,9 +55,51 @@
         .enregistrer{
             display: flex;
             justify-content: center;
+            align-items: center;
             width: 100%;
             height: 40px;
+            margin-top: 8%;
         }
     /*Fin partie Bouton*/
+
+    /*Supprimer des produits*/
+        #suppr_modif{
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            border-top: 2px solid rgb(144, 0, 0);
+            margin-top: 5%;
+        }
+        #form_suppr{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 2%;
+        }
+        .suppr_product{
+            margin-top: 2%;
+        }
+    /*Fin de la partie Suppr*/
+
+    /**/
+    #btn-alim-boitier-cg, #btn-cm-memoire-processeur{
+        display: flex;
+        justify-content: space-around;
+        flex-direction: row;
+        margin-top: 5%;
+    }
+    #btn_stockage_sort{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin-top: 5%;
+    }
+    .btn-list{
+        width: 100px;
+        height: 50px;
+    }
+
+
 
 /*Fin partie Formulaire*/
