@@ -540,3 +540,21 @@
         </form>
     </div>
 </div>
+<div id="suppr_modif">
+    <h3><u>Suppression de produit</u></h3>
+    <form action="" method="post" id="form_suppr">
+        <select name="select_products" id="select_product">
+            <option value="">--Catégorie du produit--</option>
+            <option value="alimentation">Alimentation</option>
+            <option value="boitier">Boitier</option>
+            <option value="cg">Carte-Graphique</option>
+            <option value="cm">Carte-Mère</option>
+            <option value="memoire">Mémoire</option>
+            <option value="processeur">Processeur</option>
+            <option value="stockage">Stockage</option>
+        </select>
+        <p>Entrer l'ID du produit ici et il sera supprimé</p>
+        <input type="text" name="id_new" placeholder="Id du produit">
+        <button type="submit" name="suppr_product" class="suppr_product">Supprimer le produit</button>
+    </form>
+</div>
