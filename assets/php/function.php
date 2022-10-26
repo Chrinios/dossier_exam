@@ -375,11 +375,13 @@
                 }
             }
         //Fin Ajout produit
+
         //Début Modification Produit
             function modif_produit(){
 
             }
         //Fin Modification Produit
+        
         //Début Suppression Produit
             function suppr_produit($categorie ,$new_id){
                 try{
@@ -452,11 +454,11 @@
         }
 
         //Pour supprimer le compte
-        function suppr($email, $password){
+        function suppr_client($id_client){
             try{
                 $pdo = pdo_connect_account();
                 $sql = "DELETE FROM `account` 
-                        WHERE `email` = '$email'";
+                        WHERE `id` = '$id_client'; ";
                 $pdo->exec($sql);
             }
             catch(PDOException $a){

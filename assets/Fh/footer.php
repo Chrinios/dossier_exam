@@ -1,18 +1,22 @@
 <div class='contact-plan-site'>
     <div class='contact'>
-        Contact Us<br>
-        <a href="../dossier_exam/contact_us.php">
-            <button>
-                URL vers contact form
-            </button>
-        </a><br>
-        Notre location <br>
-        . <br>
-        . <br>
-        .
+        <div id="form_contact">
+            Contact Us<br>
+            <a href="../dossier_exam/contact_us.php">
+                <button>
+                    Formulaire de Contact
+                </button>
+            </a>
+        </div>
         
+        <div id="emplacement">
+            Notre location <br>
+            . 970 Rue de la Bergeresse,<br>
+            . Olivet,<br>
+            . 45160
+        </div>
     </div>
     <div class='plan-site'>
-        <button>Vers Image avec le plan du site sous pdf ? jpg?</button>
+        <button>Plan du Site</button>
     </div>
 </div>

@@ -71,7 +71,7 @@ a{
 
         .CSP, .MCA{
             display: flex;
-            justify-content: center;
+            justify-content: space-around;
             margin-top: 4%;
         }
 
@@ -84,11 +84,20 @@ a{
         background-color: black;
         color: aqua;
         justify-content: center;
-        flex-direction: row;
         align-items: center;
     }
+    
     .contact{
+        display: flex;
         margin-right: 10%;
+        flex-direction: row;
+    }
+    #form_contact{
+        display: flex;
+        margin-right: 10%;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
 
     .plan-site{

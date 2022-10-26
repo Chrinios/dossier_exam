@@ -48,7 +48,7 @@
         <!--Permet de faire la connection entre les données inséré dans le form et dans les emplacements pour envoyer a la bdd-->
         <?php
             require_once($_SERVER['DOCUMENT_ROOT'] . '/dossier_exam/back_end/assets/php/ajout_produit.php');
-            require_once($_SERVER['DOCUMENT_ROOT'] . '/dossier_exam/back_end/assets/php/suppr_produit.php');
+            require_once($_SERVER['DOCUMENT_ROOT'] . '/dossier_exam/back_end/assets/php/function_suppr.php');
         ?>
         <script src="assets/js/appear_produit.js"></script>
     </body>

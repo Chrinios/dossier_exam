@@ -3,8 +3,8 @@
     display: flex;
     justify-content: center;
     flex-direction: column;
-    width: 700px;
-    height: 500px;
+    width: 650px;
+    height: 350px;
     margin-top: 10%;
     margin-bottom: 10%;
     margin-left: 30%;
@@ -41,6 +41,22 @@ button{
 
 #form_log-in, #form_register{
     display: none;
+    width: 100%;
+}
+.form_portail{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+}
+.form-input{
+    display: flex;
+    flex-direction: column;
+    
+}
+.input{
+    margin-top: 4%;
+    margin-bottom: 5%;
 }
 
 /*Emplacement pour les forms*/

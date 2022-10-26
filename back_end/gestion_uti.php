@@ -48,18 +48,28 @@
                         </th>
                     </tr>  
                     <?php 
-                        require_once($_SERVER['DOCUMENT_ROOT'] . '/dossier_exam/back_end/assets/account_gestion/account_gestion.php') 
+                        require_once($_SERVER['DOCUMENT_ROOT'] . '/dossier_exam/back_end/assets/account_gestion/account_gestion.php');
                     ?>
                 </table>
             </div>
-            
+            <?php
+                require_once($_SERVER['DOCUMENT_ROOT'] . '/dossier_exam/back_end/assets/account_gestion/suppr.php') 
+            ?>
         </div>
 
         <!--Permet de faire la connection entre les données inséré dans le form et dans les emplacements pour envoyer a la bdd-->
         <?php
             require_once($_SERVER['DOCUMENT_ROOT'] . '/dossier_exam/back_end/assets/php/ajout_produit.php');
+            
+            //Pour supprimer le compte client
+            if(isset($_POST['suppr_client'])){
+                $id_client = $_POST['id_client'];
+
+                suppr_client( 
+                    $id_client
+                );
+            }
         ?>
         <script src="assets/js/appear_produit.js"></script>
-        <script src="assets/js/sort_table.js"></script>
     </body>
 </html>

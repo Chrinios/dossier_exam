@@ -39,28 +39,41 @@
             <!--Partie pour les forms-->
             <div class="formulaire">
                 <div id="form_log-in">
-                    <h1><u>Se Connecter</u></h1>
-                    <form action="" method="get">
-                        <input type="text" name="username" id="username" placeholder="Nom d'utilisation" required>
-                        <input type="password" name="password" id="password" placeholder="Mot de passe" required>
-                        <input type="submit" value="Log-In">
-                    </form>
-                    <p>
-                        <!--Pour recréer sont password sur une nouvelle page, ou il y aura le nv mdp + le btn pour revenir a l'acceuil-->
-                        <a href="gen_pwd.php">
-                            Forget you Password?
-                        </a>
-                    </p>
+                    <div class="form_portail">
+                        <h1>
+                            <u>
+                                Se Connecter
+                            </u>
+                        </h1>
+                        <form action="" method="get" class="form-input">
+                            <input type="text" name="username" id="username" class="input" placeholder="Nom d'utilisation" required>
+                            <input type="password" name="password" id="password" class="input" placeholder="Mot de passe" required>
+                            <input type="submit" value="Log-In">
+                        </form>
+                        <p>
+                            <!--Pour recréer sont password sur une nouvelle page, ou il y aura le nv mdp + le btn pour revenir a l'acceuil-->
+                            <a href="gen_pwd.php">
+                                Forget you Password?
+                            </a>
+                        </p>
+                    </div>
                 </div>
                 <div id="form_register">
-                    <h1><u>S'Enregistrer</u></h1>
-                    <form action="" method="post">
-                        <input type="text" name="username" id="username" placeholder="Nom d'utilisation" required>
-                        <input type="email" name="email" id="email" placeholder="Email" required>
-                        <input type="password" name="password" id="password" placeholder="Mot de Passe" required>
-                        <input type="submit" value="Register" name="register">
-                    </form>
+                    <div class="form_portail">
+                        <h1>
+                            <u>
+                                S'Enregistrer
+                            </u>
+                        </h1>
+                        <form action="" method="post" class="form-input">
+                            <input type="text" name="username" id="username" class="input" placeholder="Nom d'utilisation" required>
+                            <input type="email" name="email" id="email" class="input" placeholder="Email" required>
+                            <input type="password" name="password" id="password" class="input" placeholder="Mot de Passe" required>
+                            <input type="submit" value="Register" name="register">
+                        </form>
+                    </div>
                 </div>
+                
             </div>
         </div>
         <?php 
