@@ -16,7 +16,6 @@
         <div id="comparateur">
             <div>
                 <?php
-                    include_once($_SERVER['DOCUMENT_ROOT'] . '/dossier_exam/assets/php/compare.php');
                     foreach($_POST['check[]'] as $prod){
                         echo $prod;
                     }

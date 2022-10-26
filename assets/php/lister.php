@@ -24,5 +24,7 @@
             </td></tr>";
         }
     }
-    
+    else{
+        echo "Aucun produit trouvé, essayez de changer les paramètres de recherche.";
+    }
 ?>

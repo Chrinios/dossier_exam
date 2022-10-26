@@ -527,7 +527,7 @@
                             Utilisation
                         </button>
                     </th>
-                    <th >
+                    <th>
                         <button type="submit" name="sort_stockage_technologie">
                             Techno_enregistrement
                         </button>
