@@ -9,6 +9,7 @@
     display: flex;
     align-items: center;
     flex-direction: column;
+    justify-content: center;
     border: 6px solid green;
     border-radius: 20px;
     width: 600px;
@@ -16,19 +17,77 @@
     margin-top: 7%;
 }
 
-#case_sort{
-    display: flex;
-    margin-top: 2%;
-    text-align: center;
-}
+/*Formulaire pour affiner la recherche*/
+    .affine_recherche{
+        display: flex;
+        flex-direction: column;
+        justify-content: end;
+        text-align: center;
+    }
+
+    #case_sort{
+        display: flex;
+        justify-content: center;
+        margin-top: 2%;
+        text-align: center;
+    }
+
+    #marque{
+        margin-right: 5%;
+    }
+    #capacite, #modele{
+        margin-left: 5%;
+    }
+
+    /*Bouton des formulaire pour affiner la recherche*/
+    .regler{
+        margin-top: 3%;
+    }
 
 
+
+    #case_list{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        margin-top: 5%;
+    }
 /*Fin de la partie Affinage de la recherche*/
+/*Début partie Comparateur*/
 
-#comparateur{
-    display: flex;
-    justify-content: center;
-    border-top: 3px solid greenyellow;
-    margin-top: 10%;
-    margin-bottom: 10%;
-}
+    #comparateur{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        border-top: 3px solid greenyellow;
+        margin-top: 10%;
+        margin-bottom: 10%;
+    }
+
+    #sous_titre{
+        display: flex;
+        justify-content: center;
+    }
+
+    #comparateur_table{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        text-align: center;
+    }
+
+    #appear_product_select{
+        display: flex;
+        flex-direction: row;
+    }
+
+    ul{
+        list-style-type: none;
+        padding-right: 40px;
+    }
+
+    .liste{
+        margin: 5%;
+    }
+
+/*Fin Partie Comparateur*/
