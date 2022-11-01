@@ -30,13 +30,6 @@
                 </button>
             </form>
         </div>
-        <div>
-            <form action="gestion_stat.php">
-                <button class="btn_back">
-                    Regarder vos statistiques
-                </button>
-            </form>
-        </div>
         <div id="btn_uti">
             <form action="gestion_uti.php">
                 <button class="btn_back">

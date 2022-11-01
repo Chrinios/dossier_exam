@@ -7,13 +7,12 @@
 <div id="myhead">
     <div class="login-register">
         <h1 id="titre">
+            <i class="fa-sharp fa-solid fa-scale-balanced fa-1.5x"></i>
             PCompare
         </h1>
         <p id="btn_portail">
             <a href="portail.php">
-                Log-in ?
-                <i class="fa-sharp fa-solid fa-right-left fa-3x"></i>
-                Register ?
+                <i class="fa-solid fa-user fa-3x"></i>
             </a>
         </p>
     </div>

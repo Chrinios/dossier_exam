@@ -5,6 +5,11 @@ a{
     color: aqua;
 }
 
+img{
+    width: 100%;
+}
+
+
 /*Begin Header*/
     .login-register{
         display: flex;
@@ -83,28 +88,33 @@ a{
             margin-top: 4%;
         }
 
+        /*Utiliser quand l'écran fait au maximum de 800px*/
+        @media screen and (max-width: 800px){
+            .btn-compare{
+                width: 100%;
+            }
+        }
+
     /*Finish Button*/
 /*Finish index.php*/
+
+/*Début Page Contact*/
+#form_contact{
+    display: flex;
+    margin-right: 10%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+/*Fin Page Contact*/
 
 /*Begin footer*/
     .contact-plan-site{
         display: flex;
         background-color: black;
         color: aqua;
-        justify-content: center;
-        align-items: center;
-    }
-    
-    .contact{
-        display: flex;
-        margin-right: 10%;
+        justify-content: space-around;
         flex-direction: row;
-    }
-    #form_contact{
-        display: flex;
-        margin-right: 10%;
-        flex-direction: column;
-        justify-content: center;
         align-items: center;
     }
 
