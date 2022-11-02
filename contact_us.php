@@ -63,12 +63,12 @@
 
 <?php
     if(isset($_POST['envoyer'])){
-        $nom = $_POST['nom'];
-        $prenom = $_POST['prenom'];
-        $email = $_POST['email'];
-        $phone = $_POST['phone'];
-        $titre = $_POST['titre'];
-        $message = $_POST['message'];
+        $nom = strip_tags(htmlentites($_POST['nom']));
+        $prenom = strip_tags(htmlentites($_POST['prenom']));
+        $email = strip_tags(htmlentites($_POST['email']));
+        $phone = strip_tags(htmlentites($_POST['phone']));
+        $titre = strip_tags(htmlentites($_POST['titre']));
+        $message = strip_tags(htmlentites($_POST['message']));
         die(
             sendmessage(
                 $nom, $prenom, $email, $phone, $titre, $message

@@ -28,15 +28,16 @@
         </h1>
         <a href="../../index.php">Revenir a l'Accueil ?</a>
         <div id="affinage">
-            <!--Emplacement pour trier les produits et enlever les produits non correspondant a ce qui est demandé-->
+            
+            <!--
+                Groupe de Formulaire pour aller afficher 
+                les produits correspondants au filtre demandé
+            -->
             <div id="case_sort">
-                <!--
-                    Groupe de Formulaire pour aller afficher 
-                    les produits correspondants au filtre demandé
-                -->
                 
+                <!--Partie pour demander la marque choisi-->
                 <form action="" method="post" class="affine_recherche" id="marque">
-                    <!--Partie pour demander la marque choisi-->
+                    
                     <p>Marque</p>
                     <select name="marquos">
                         <option value="">Marque</option>

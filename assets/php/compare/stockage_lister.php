@@ -24,6 +24,13 @@
             </td></tr>";
         }
     }
+    
+    /*
+        Dire que si le Stockage | min et plus petit que le prix de l'article
+                                | max et plus grand que le prix de l'article
+        Alors on affiche la liste avec les produits ayant le prix correspondant.
+    */
+
     elseif(isset($_POST['search_stockage'])){
         $stockage_min = $_POST['capacite_min'];
         $stockage_max = $_POST['capacite_max'];

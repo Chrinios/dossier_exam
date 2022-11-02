@@ -7,8 +7,10 @@
 <div id="myhead">
     <div class="login-register">
         <h1 id="titre">
-            <i class="fa-sharp fa-solid fa-scale-balanced fa-1.5x"></i>
-            PCompare
+            <a href="index.php">
+                <i class="fa-sharp fa-solid fa-scale-balanced fa-1.5x"></i>
+                PCompare
+            </a>
         </h1>
         <p id="btn_portail">
             <a href="portail.php">

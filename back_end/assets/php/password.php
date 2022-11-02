@@ -1,9 +1,10 @@
 <?php
-ini_set('display_errors', true);
+    ini_set('display_errors', true);
 
     if(array_key_exists('newpwd', $_POST)){
         $mdp = generatepassword();
-        echo '<input type="text" style="display:flex;" name="pwd" value="'.$mdp.'">';   
+        echo '<input type="text" name="pwd" value="'.$mdp.'">';
+        echo '<br />Notez le Bien!';   
     }
 
     //Cette fonction nous générera un mdp.

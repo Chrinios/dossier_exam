@@ -427,11 +427,11 @@
         }
 
         //Pour créer un compte
-        function create($username, $email, $password){
+        function create($username, $email, $mdp){
             try{
                 $pdo = pdo_connect_account();
                 $sql = "INSERT INTO `account`(`id`,`username`,`email`,`password`)
-                        VALUE (NULL, '$username','$email','$password');";
+                        VALUE (NULL, '$username','$email','$mdp');";
                 $pdo->exec($sql);
             }
             catch(PDOException $a){
@@ -481,8 +481,30 @@
                 echo $sql . $a->getMessage();
             }
         }
-
-
-
     //Fin Partie Compte
+
+    //Début partie Connexion
+
+        function init_session():bool{
+            //Si il y a pas d'id de session alors on commence la session et on generer un id.
+            if(!session_id()){
+                session_start();
+                session_regenerate_id();
+                return true;
+            }
+            else{
+                return false;
+            }
+
+        }
+
+        function is_connected():bool{
+            return true; 
+        }
+
+        function unset_session() :void{
+            session_unset();
+            session_destroy();
+        }
+    //Fin partie Connexion
 ?>

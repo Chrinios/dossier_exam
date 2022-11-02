@@ -52,23 +52,57 @@
                     ?>
                 </table>
             </div>
+            <div id="form_register">
+                <h1>
+                    <u>
+                        Créer un autre Accés au Back-end
+                    </u>
+                </h1>
+                <form action="" method="post" class="form-input">
+                    <input type="text" name="username" id="username" class="input" placeholder="Nom d'utilisation" required>
+                    <input type="email" name="email" id="email" class="input" placeholder="Email" required>
+                    <input type="password" name="password" id="password" class="input" placeholder="Mot de Passe" required>
+                    <input type="submit" value="Register" name="register">
+                </form>
+            </div>
             <?php
                 require_once($_SERVER['DOCUMENT_ROOT'] . '/dossier_exam/back_end/assets/account_gestion/suppr.php') 
             ?>
         </div>
 
+        <div>
+            <h2>
+                <u>
+                    Re-Création de votre Mot de passe.
+                </u>
+            </h2>
+            <form action="" method="post">
+                <div id="part_mdp">
+                    <button name="newpwd">
+                        Régénérer le mot de passe.
+                    </button>
+                    <div id="mdp">
+                        <p id="mdp_desc">
+                            Votre <strong>nouveau</strong> mot de passe va apparaitre ici <i class="fa-sharp fa-solid fa-arrow-right"></i>
+                        </p>
+                        <?php
+                            require_once('assets/php/password.php');
+                        ?>
+                    </div>
+                </div>
+                <div id="part_end">
+                    <input type="email" name="email" id="email" placeholder="Email">
+                    <button type="submit" name="recreate">
+                        Enregistrer le Nouveau Mot de Passe
+                    </button>
+                </div>
+            </form>
+        </div>
+
         <!--Permet de faire la connection entre les données inséré dans le form et dans les emplacements pour envoyer a la bdd-->
         <?php
             require_once($_SERVER['DOCUMENT_ROOT'] . '/dossier_exam/back_end/assets/php/ajout_produit.php');
-            
-            //Pour supprimer le compte client
-            if(isset($_POST['suppr_client'])){
-                $id_client = $_POST['id_client'];
-
-                suppr_client( 
-                    $id_client
-                );
-            }
+            require_once($_SERVER['DOCUMENT_ROOT'] . '/dossier_exam/back_end/assets/php/function_uti.php');
         ?>
         <script src="assets/js/appear_produit.js"></script>
     </body>
