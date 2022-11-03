@@ -53,7 +53,7 @@
             $connecteur_disponible
         );
     }
-    
+?>    
     elseif (isset($_POST['ajout_cg'])) {
         $marque = $_POST['cg-marque'];
         $prix = $_POST['cg-prix'];

@@ -9,7 +9,7 @@
     </head>
     <body>
         <?php
-            include_once('assets/Fh/header.php');
+            include_once($_SERVER['DOCUMENT_ROOT'] . '/dossier_exam/assets/Fh/header.php');
         ?>
         <div class="contenu">
             <!--Partie Supérieur de l'acceuil avec Logo et descriptif du site rapide + phrase acrocheur-->
@@ -99,7 +99,7 @@
             </div>
         </div>
         <?php
-            include_once('assets/Fh/footer.php');
+            include_once($_SERVER['DOCUMENT_ROOT'] . '/dossier_exam/assets/Fh/footer.php');
         ?>
     </body>
 </html>
